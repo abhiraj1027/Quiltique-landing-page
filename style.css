@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.ri-menu-fill{
+    display: none;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 8% 60% 32%;
+    grid-template-columns: 60% 40%;
+}
+
+.logo {
+    font-size: 1.8vw;
+    font-weight: bold;
+    color: black;
+}
+#top{
+    background-color: #fff;
+    grid-column: 1 / 3;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-right {
+    margin: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.top-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1vw;
+    text-transform: capitalize;
+}
+.top-right h6{
+    font-size: 15px;
+    border: solid black 2px;
+    padding: 7px 7px;
+    border-radius: 50%;
+    background-color: black;
+}
+.ri-shopping-bag-line{
+    color: white;
+}
+#left{
+    background-color: #fff;
+    padding: 40px;
+}
+#left h2{
+    font-size: 5vw;
+    margin: 20px 40px;  
+    font-weight: 100;
+}
+#left h4{
+    font-size: 1.2vw;
+    padding-top: 10px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin: 20px 40px;
+}
+
+#right{
+
+    background-color: #fff;
+    padding: 40px;
+}
+section{
+    margin-top: 15vw;
+
+}
+section h4{
+    /* align-self: flex-end; */
+    margin-bottom: 1vw;
+    font-weight: 100;
+    margin-left: 12vw;
+    border-top: 2px solid #222;
+    font-size: 1.3vw;
+    padding-top: 20px;
+    margin: 20px 40px;
+}
+#under{
+    /* align-self: flex-end; */
+    text-decoration: underline;
+    font-style: italic;
+}
+.ri-arrow-right-up-line{
+    padding-left: 20vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+#bottom{
+    grid-column: 1 / 3;
+    background-color: #fff;
+    width: 100%;
+}
+#bottom img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ---------- Tablet (<= 1024px) ---------- */
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    #top {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .top-right {
+        margin: 10px 0;
+        gap: 15px;
+    }
+
+    #left h2 {
+        font-size: 6vw;
+    }
+
+    #left h4,
+    section h4 {
+        font-size: 2vw;
+        margin: 10px 20px;
+    }
+
+    #icon h3, #icon h2 {
+        font-size: 2.5vw;
+    }
+
+    .ri-arrow-right-up-line {
+        font-size: 2vw;
+        padding-left: 10vw;
+    }
+
+    section {
+        margin-top: 8vw;
+    }
+    .logo {
+        font-size: 2.5vw;
+    }
+}
+
+/* ---------- Mobile (<= 768px) ---------- */
+@media (max-width: 768px) {
+    .ri-menu-fill {
+        display: inline-block;
+        font-size: 6vw;
+        margin-left: auto;
+    }
+    .logo {
+        font-size: 5vw;
+        margin-bottom: 10px;
+    }
+
+    #top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-right {
+        display: none;
+        align-self: flex-end;
+        flex-wrap: wrap;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left h2 {
+        font-size: 8vw;
+    }
+
+    #left h4,
+    section h4 {
+        font-size: 3.5vw;
+        margin: 10px 20px;
+    }
+
+    .top-right {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    #icon h3,
+    #icon h2 {
+        font-size: 3vw;
+    }
+
+    .ri-arrow-right-up-line {
+        font-size: 4vw;
+        padding-left: 5vw;
+    }
+
+    section {
+        margin-top: 10vw;
+    }
+
+    #bottom img {
+        height: auto;
+    }
+}
