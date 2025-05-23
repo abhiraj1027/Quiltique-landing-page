@@ -43,9 +43,13 @@ Mobile view:-
 ## 📂 Folder Structure
 
 /quiltique-landing/
+
 │
+
 ├── index.html 
+
 ├── style.css 
+
 └── quilt-image.png 
 
 ---
