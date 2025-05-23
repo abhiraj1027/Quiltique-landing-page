@@ -44,9 +44,9 @@ Mobile view:-
 
 /quiltique-landing/
 │
-├── index.html # Main HTML file
-├── style.css # All styles including responsiveness
-└── quilt-image.png # Product image or banner
+├── index.html 
+├── style.css 
+└── quilt-image.png 
 
 ---
 
